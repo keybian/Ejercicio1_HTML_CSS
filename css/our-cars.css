@@ -1,0 +1,147 @@
+@font-face {
+    font-family: text;
+    src: url(../resource/fonts/Poppins-Regular.ttf);
+}
+
+
+:root{
+    --font-text: text;
+
+    --Color-Primario: #512da8;
+    --Color-Secundario: #757575;
+    --Color-Terciario: #607d88;
+    --Color-With: #ffff;
+    --Color-Black: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: var(--font-text);
+    
+}
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background: linear-gradient(90deg, rgba(96,125,136,1) 19%, rgba(117,117,117,1) 80%);
+    min-height: 100vh;
+    padding: 80px 0;
+    
+} 
+
+.menu-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: var(--Color-Primario);
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.our-cars{
+    color: #512da8;
+}
+
+.menu-container .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+
+.menu-container .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: var(--Color-With);
+    font-weight: 600;
+    display: block;
+}
+
+.menu-container .navbar ul li a:hover{
+    color: var(--Color-Primario);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon{
+    cursor: pointer;
+    display: none;
+}
+
+.slaider-box{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+}
+
+.slaider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+
+    .header{
+        padding: 20px;
+    }
+    .menu-container{
+        padding: 20px;
+    }
+
+    .menu-container .menu-icon {
+        display: initial;
+    }
+ 
+    .menu-container .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--Color-Terciario);
+        display: none;
+    }
+    
+    .menu-container .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
