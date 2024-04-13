@@ -56,7 +56,7 @@ span{
 /*El botón que pliega/despliega*/
 .accordion-toggle {
   opacity: 0;
-  background-color: transparent;
+  /*background-color: transparent;*/
   z-index: 1;
   margin-bottom: 2px;
 }
@@ -99,11 +99,11 @@ span{
 }
 
 .accordion-toggle:hover + .accordion-header{
-  background-color: var(--third-color);
+  background-color: var(--primary-color);
   color:var(--with-color);
 }
 .accordion-toggle:checked + .accordion-header {
-    background-color: var(--third-color);
+    background-color: var(--primary-color);
     color:var(--with-color)
 } 
 .containerCenter {
