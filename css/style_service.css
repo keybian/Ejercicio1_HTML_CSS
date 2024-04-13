@@ -1,0 +1,121 @@
+@font-face {
+    font-family: text;
+    src: url(../resource/fonts/Poppins-Regular.ttf);
+}
+
+
+:root{
+    --font-text: text;
+
+    --primary-color: #512da8;
+    --second-color: #757575;
+    --third-color: #607d88;
+    --with-color: #ffff;
+    --black-color: black;
+}
+span{
+    color: var(--with-color);
+}
+.accordion {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 70%;
+  height: auto;
+  
+  font-family: var(--font-text);
+  /*border: 1px solid var(--with-color);*/border-style: none;
+    
+      
+
+      border-radius: 5%;
+      box-shadow: inset 0 -3em 3em var(--third-color),
+          0.3em 0.3em 1em var(--third-color);
+  margin:10% auto;
+  z-index:1;
+} 
+@media (width < 450px) {
+    .accordion {
+        margin:40% auto;
+        width: 80%;
+    }
+
+}
+/*Contenedor común plegar/desplegar*/
+.accordion-toggle,
+.accordion-header{
+  font-size: 15px;
+  width: 100%;
+  height: 3em;
+  margin: 0;
+  line-height: 3em;
+  cursor: pointer;
+}
+/*El botón que pliega/despliega*/
+.accordion-toggle {
+  opacity: 0;
+  background-color: transparent;
+  z-index: 1;
+  margin-bottom: 2px;
+}
+/*Bloque para el título*/
+.accordion-header{
+  background-color: var(--with-color);
+  color:var(--primary-color);
+  position: relative;
+  margin-top: -3em;
+  padding-left: 10px
+}
+
+/*Bloque replegable con el contenido */
+.accordion-content {
+  box-sizing: border-box;
+  background-color: var(--second-color);
+  color:var(--with-color);
+  overflow: auto;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin-bottom: -250px;
+  padding: 0 20px;
+  transition: margin 0.3s ease 0.1s;
+  }
+.accordion-toggle:checked + .accordion-header + .accordion-content {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.accordion-header::before,
+.accordion-toggle:checked + .accordion-header::before {
+  content: '+';
+  display: inline-block;
+  text-align: center;
+  width: 1em;
+  font-size: 1.em;
+}
+.accordion-toggle:checked + .accordion-header::before {
+  content:'-';
+}
+
+.accordion-toggle:hover + .accordion-header{
+  background-color: var(--third-color);
+  color:var(--with-color);
+}
+.accordion-toggle:checked + .accordion-header {
+    background-color: var(--third-color);
+    color:var(--with-color)
+} 
+.containerCenter {
+      
+    top: 50%;
+    left: 50%;
+    
+    border-style: none;
+    width: 130%;
+    height: 120%;
+
+    border-radius: 5%;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
