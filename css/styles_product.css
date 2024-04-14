@@ -13,9 +13,7 @@
     --with-color: #ffff;
     --black-color: black;
 }
-span{
-    color: var(--with-color);
-}
+
 .styled-table { 
     position: relative;
     border-collapse: collapse; 
