@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link rel="stylesheet" href="../css/our-cars.css" />
+    <link rel="stylesheet" href="../css/style_car.css" />
+    
     <title>Document</title>
   </head>
   <body>
@@ -24,62 +27,74 @@
           <nav class="navbar">
             <ul>
               <li><a href="./index_car.html">Inicio</a></li>
-              <li><a href="./our-cars.html"><span class="our-cars">Our Cars</span></a></li>
+              <li><a href="./our-cars.html"><span class="start">Our Cars</span></a></li>
               <li><a href="#">Contactanos</a></li>
               <li><a href="./service.html">Sevicios</a></li>
               <li><a href="./product.html">Productos</a></li>
               <li><a href="#">Motos</a></li>
               
           </nav>
+          <span class="span">Our Cars --> Carrusel</span>
         </div>
-
-        <div class="slider-box">
-          <ul>
-            <li>
-              <img src="../resource/imgs/car-1.webp" alt="">
-              <div class="text">
-                <h2>vehiculo 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore praesentium suscipit ipsum fuga illo doloremque eaque error nulla officiis ullam, possimus quae vitae quam architecto eius, dolorum eos velit ex?</p>
-              </div>
-            </li>
-            <li>
-              <img src="../resource/imgs/car-2.webp" alt="">
-              <div class="text">
-                <h2>vehiculo 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore praesentium suscipit ipsum fuga illo doloremque eaque error nulla officiis ullam, possimus quae vitae quam architecto eius, dolorum eos velit ex?</p>
-              </div>
-            </li>
-            <li>
-              <img src="../resource/imgs/car-3.webp" alt="">
-              <div class="text">
-                <h2>vehiculo 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore praesentium suscipit ipsum fuga illo doloremque eaque error nulla officiis ullam, possimus quae vitae quam architecto eius, dolorum eos velit ex?</p>
-              </div>
-            </li>
-            <li>
-              <img src="../resource/imgs/car-4.jpg" alt="">
-              <div class="text">
-                <h2>vehiculo 4</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore praesentium suscipit ipsum fuga illo doloremque eaque error nulla officiis ullam, possimus quae vitae quam architecto eius, dolorum eos velit ex?</p>
-              </div>
-            </li>
-            <li>
-              <img src="../resource/imgs/car-5.jpg" alt="">
-              <div class="text">
-                <h2>vehiculo 5</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore praesentium suscipit ipsum fuga illo doloremque eaque error nulla officiis ullam, possimus quae vitae quam architecto eius, dolorum eos velit ex?</p>
-              </div>
-            </li>
-
-          </ul>
+        <div class="card-carousel">
+            <ul class="carousel-container radio ">
+              <li>
+                <input class="carousel-toggle" id="slide-1" type="radio" name="c-toggle" checked/> 
+                <label class="dot" for="slide-1"></label>
+                <ul class="carousel-content">
+                  <li>
+                    <img src="../resource/imgs/car-1.webp"/>
+                    <label class="arrow back" for="slide-5">&#8249;	</label>      
+                    <label class="arrow next" for="slide-2">&#8250;</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <input class="carousel-toggle" id="slide-2" type="radio" name="c-toggle" />   
+                <label class="dot" for="slide-2"></label>
+                <ul class="carousel-content">
+                  <li>
+                    <img src="../resource/imgs/car-2.webp" alt=""/>
+                    <label class="arrow back" for="slide-1">&#8249;	</label>       
+                    <label class="arrow next" for="slide-3">&#8250;</label>  
+                  </li>  
+                </ul>    
+              </li>
+              <li>
+                <input class="carousel-toggle" id="slide-3" type="radio" name="c-toggle" />   
+                <label class="dot" for="slide-3"></label>
+                <ul class="carousel-content">
+                  <li>
+                    <img src="../resource/imgs/car-3.webp" alt=""/>
+                    <label class="arrow back" for="slide-2">&#8249;	</label>       
+                    <label class="arrow next" for="slide-4">&#8250;</label>  
+                  </li>  
+                </ul>    
+              </li>
+              <li>
+                <input class="carousel-toggle" id="slide-4" type="radio" name="c-toggle" />   
+                <label class="dot" for="slide-4"></label>
+                <ul class="carousel-content">
+                  <li>
+                    <img src="../resource/imgs/car-4.jpg" alt=""/>
+                    <label class="arrow back" for="slide-3">&#8249;</label>       
+                    <label class="arrow next" for="slide-5">&#8250;</label>  
+                  </li>  
+                </ul>    
+              </li>
+              <li>
+                <input class="carousel-toggle" id="slide-5" type="radio" name="c-toggle" />   
+                <label class="dot" for="slide-5"></label>
+                <ul class="carousel-content">
+                  <li>
+                    <img src="../resource/imgs/car-5.jpg" alt=""/>
+                    <label class="arrow back" for="slide-4">&#8249;</label>       
+                    <label class="arrow next" for="slide-1">&#8250;</label>  
+                  </li>  
+                </ul>    
+              </li>
+            </ul>
         </div>
-        
-
-
-
-
-
-
       </main>
     </header>
     
