@@ -163,13 +163,15 @@ img {
     color: var(--Color-With);
 
 }
-
-.btn-1:hover {
+.buttons:hover *{
+    background-color: var(--Color-Primario);
+}
+.btn-1:hover  {
     background-color: var(--Color-Primario);
 
 }
 
-@media(max-width:991px){
+@media(max-width:1090px){
 
     .header{
         padding: 20px;

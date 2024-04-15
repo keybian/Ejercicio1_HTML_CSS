@@ -1,0 +1,77 @@
+@font-face {
+    font-family: text;
+    src: url(../resource/fonts/Poppins-Regular.ttf);
+}
+
+
+:root{
+    --font-text: text;
+
+    --primary-color: #512da8;
+    --second-color: #757575;
+    --third-color: #607d88;
+    --with-color: #ffff;
+    --black-color: black;
+}
+  
+  #tabs{
+    position: relative;
+    margin-top: 15%;
+   
+  }
+  
+  span.diana {
+    position: fixed;
+    display: none;
+    }
+  
+  .diana + a {
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    border: 1px solid var(--with-color);
+    background-color: var(--with-color);
+    margin-bottom: -1px;
+    border-radius: 8px 8px 0 0;
+    margin-right: 10px;
+    text-decoration:none;
+    color: var(--primary-color);
+  }
+  
+  .diana:target + a {
+    background-color:var(--primary-color);
+    border-bottom-color: var(--primary-color); 
+    color: var(--with-color);
+  }
+
+  #pnl_1, #pnl_2, #pnl_3{
+    position: absolute;
+    top: 31px;
+    left: 0;
+    border: none;
+    clear: both;
+    overflow: hidden;
+    
+    
+  }
+  
+    #pnl_1 > div, #pnl_2 > div, #pnl_3 > div{
+      opacity: 0;
+      transition: all 0.1s ease;
+      padding: 30px;
+    }
+  
+  #uno:target ~ #pnl_1, #dos:target ~ #pnl_2, #tres:target ~ #pnl_3{
+    position: static;
+    border: 1px solid #ddd;
+  }
+  
+    #uno:target ~ #pnl_1 > div, #dos:target ~ #pnl_2 > div, #tres:target ~ #pnl_3 > div{
+      opacity: 1;
+      transition: all 1s ease;
+    }
+    
+
+    
