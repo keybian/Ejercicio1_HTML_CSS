@@ -128,7 +128,7 @@
 
     .carousel-container {
         width: 100%;
-        margin-top: 10%;
+       
         height: 480px;
         .arrow { 
             margin-top: 0%;
@@ -142,7 +142,7 @@
 
     .carousel-container {
         width: 100%;
-        margin-top: 50%;
+        
         height: 180px;
         .arrow { 
             margin-top: 0%;

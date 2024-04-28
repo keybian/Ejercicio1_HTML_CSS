@@ -22,13 +22,13 @@
     font-family: var(--font-text); 
     min-width: 450px; 
     width: 70%;
-    margin:10% auto;
+    
     z-index:2;
     box-shadow: 0 0 20px var(--black-color); 
 }
 @media (width < 850px) {
     .styled-table {
-        margin-top: 20%;
+        
         margin-left: auto;
         width: 50%;
         min-width: 450px; 
@@ -38,7 +38,7 @@
 }
 @media (width < 500px) {
     .styled-table {
-        margin-top: 40%;
+        
         margin-left: 0;
         width: 5%;
         min-width: 10px; 
