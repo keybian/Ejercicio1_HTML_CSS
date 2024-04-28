@@ -15,10 +15,12 @@
 }
   
   #tabs{
-    position: relative;
-    margin-top: 15%;
+    position: absolute;
+    text-align: center;
+    
    
   }
+  
   
   span.diana {
     position: fixed;
