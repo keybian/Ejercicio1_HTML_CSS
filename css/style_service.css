@@ -17,12 +17,12 @@ span{
     color: var(--with-color);
 }
 .accordion {
-  position: relative;
+  
   box-sizing: border-box;
-  display: flex;
+  
   flex-direction: column;
   overflow: hidden;
-  width: 70%;
+  
   height: auto;  
   font-family: var(--font-text);
   /*border: 1px solid var(--with-color);*/border-style: none;
