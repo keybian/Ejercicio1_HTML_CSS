@@ -94,7 +94,10 @@ img {
     box-shadow:  7px 7px 5px #526a74;
 }
 .start{
-    color: #512da8;
+    color: var(--Color-Primario);
+    font-size: 24px;
+    padding: 0px;
+  transition: margin 0.3s ease 0.1s;
 }
 
 
@@ -115,12 +118,18 @@ img {
     font-size: 18px;
     padding: 20px;
     color: var(--Color-With);
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color:var(--Color-Primario);
     font-weight: 600;
     display: block;
+    
 }
 
 .menu-container .navbar ul li a:hover{
     color: var(--Color-Primario);
+    font-size: 24px;
+   
+  transition: margin 0.5s ease 0.3s;
 }
 
 #menu {
