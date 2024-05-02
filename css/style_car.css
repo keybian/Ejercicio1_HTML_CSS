@@ -15,7 +15,11 @@
 }
 
 .span{
-    color: var(--with-color);
+    color: var(--Color-With);
+    margin: 0px;
+    padding: 10px;
+    display: block;
+
 }
 
 *{
@@ -29,6 +33,18 @@
 body{
     font-family: var(--font-text);
     font-family: var(--font-text);
+    background: linear-gradient(90deg, rgba(96,125,136,1) 19%, rgba(117,117,117,1) 80%);
+    min-height: 100vh;
+}
+body::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(2, 2, 2, 0.501);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    min-height: 150vh;
 }
 img {
     max-width: 100%;
@@ -37,29 +53,25 @@ img {
 .main{
     max-width: 1200px;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 .header{
-    background: linear-gradient(90deg, rgba(96,125,136,1) 19%, rgba(117,117,117,1) 80%);
-    min-height: 100vh;
+    
     padding: 80px 0;
     
 }
 
-.header::before{
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
 
-}
 
 .navbar{
     position: relative;
     z-index:10;
+    background-color: var(--Color-With) ;
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: 5px;
 }
 
 .header-content-txt{
@@ -93,11 +105,12 @@ img {
     border-radius: 15px;
     box-shadow:  7px 7px 5px #526a74;
 }
+
 .start{
     color: var(--Color-Primario);
-    font-size: 24px;
+    
     padding: 0px;
-  transition: margin 0.3s ease 0.1s;
+  
 }
 
 
@@ -117,9 +130,9 @@ img {
 .menu-container .navbar ul li a {
     font-size: 18px;
     padding: 20px;
-    color: var(--Color-With);
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color:var(--Color-Primario);
+    color: var(--Color-Secundario);
+   /* -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color:var(--Color-Primario);*/
     font-weight: 600;
     display: block;
     
@@ -127,9 +140,9 @@ img {
 
 .menu-container .navbar ul li a:hover{
     color: var(--Color-Primario);
-    font-size: 24px;
    
-  transition: margin 0.5s ease 0.3s;
+   
+  transition: margin 1s ease 0.5s;
 }
 
 #menu {
@@ -182,6 +195,7 @@ img {
 
 @media(max-width:1090px){
 
+    
     .header{
         padding: 20px;
     }
@@ -198,8 +212,9 @@ img {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: var(--Color-Terciario);
+        /*background-color: var(--Color-Terciario);*/
         display: none;
+        
     }
     
     .menu-container .navbar ul li {
@@ -209,18 +224,24 @@ img {
     #menu:checked ~ .navbar {
         display: initial;
     }
+    .span{
+    
+        margin-top: 50px;
+    
+    }
 }
 
 .contenedor{
     display: flex;
     justify-content: center;
     margin-left: 10px;
+    margin-top: 10px;
   }
   
   @media(max-width:1090px){
 
     .contenedor{
-      margin-top: 80px;
+      margin-top: 0px;
     }
   }
    

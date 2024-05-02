@@ -76,4 +76,12 @@
     }
     
 
-    
+    @media(max-width:1090px){
+
+      #tabs{
+        height: 100px;
+        
+       
+      }
+      
+    }
